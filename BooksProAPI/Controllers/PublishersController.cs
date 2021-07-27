@@ -11,20 +11,20 @@ namespace BooksProAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AuthorsController : ControllerBase
+    public class PublishersController : ControllerBase
     {
-        private AuthorsService _authorsService;
-        public AuthorsController(AuthorsService authorsService)
+        private PublishersService _publishersService;
+        public PublishersController(PublishersService publishersService)
         {
-            _authorsService = authorsService;
+            _publishersService = publishersService;
         }
 
 
-        [HttpPost("add-author")]
+        [HttpPost("add-publiher")]
 
-        public IActionResult AddAuthor([FromBody] AuthorVM authorVM)
+        public IActionResult AddPublisher([FromBody] PublisherVM publisherVM)
         {
-            _authorsService.AddAuthor(authorVM);
+            _publishersService.AddPubliher(publisherVM);
             return Ok();
         }
     }

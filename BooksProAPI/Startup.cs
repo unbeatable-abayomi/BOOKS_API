@@ -37,6 +37,8 @@ namespace BooksProAPI
            services.AddDbContext<AppDbContext>(options => options.UseSqlServer(ConnectionString));
             //Configure the Service
            services.AddTransient<BooksService>();
+           services.AddTransient<AuthorsService>();
+           services.AddTransient<PublishersService>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "BooksProAPI", Version = "v1" });
@@ -63,7 +65,7 @@ namespace BooksProAPI
             {
                 endpoints.MapControllers();
             });
-            AppDbInitialer.Seed(app);
+            //AppDbInitialer.Seed(app);
         }
     }
 }

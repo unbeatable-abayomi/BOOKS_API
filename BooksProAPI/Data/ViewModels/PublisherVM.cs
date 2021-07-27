@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 
 namespace BooksProAPI.Data.ViewModels
 {
-    public class AuthorVM
+    public class PublisherVM
     {
-        public string FullName { get; set; }
+        public string Name { get; set; }
     }
 }

@@ -25,7 +25,7 @@ namespace BooksProAPI.Data
                         DateRead = DateTime.Now.AddDays(-10),
                         Rate = 4,
                         Genre = "Biography",
-                        Author = "First Author",
+                        //Author = "First Author",
                         CoverUrl = "https.....",
                         DateAdded = DateTime.Now
 
@@ -38,7 +38,7 @@ namespace BooksProAPI.Data
                         //DateRead = DateTime.Now.AddDays(-10),
                         //Rate = 4,
                         Genre = "Autography",
-                        Author = "Seccond Author",
+                        //Author = "Seccond Author",
                         CoverUrl = "https.....",
                         DateAdded = DateTime.Now
 
@@ -51,7 +51,7 @@ namespace BooksProAPI.Data
                                           //DateRead = DateTime.Now.AddDays(-10),
                                           //Rate = 4,
                                           Genre = "Autography",
-                                          Author = "Seccond Author",
+                                          //Author = "Seccond Author",
                                           CoverUrl = "https.....",
                                           DateAdded = DateTime.Now
 

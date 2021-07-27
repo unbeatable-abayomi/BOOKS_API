@@ -7,25 +7,25 @@ using System.Threading.Tasks;
 
 namespace BooksProAPI.Data.Services
 {
-    public class AuthorsService
+    public class PublishersService
     {
         public AppDbContext _context;
 
-        public AuthorsService(AppDbContext context)
+        public PublishersService(AppDbContext context)
         {
             _context = context;
         }
 
 
-        public void AddAuthor(AuthorVM authorVM)
+        public void AddPubliher(PublisherVM publisher)
         {
-            var _author = new Author()
+            var _publisher = new Publisher()
             {
-                FullName = authorVM.FullName,
+                Name = publisher.Name,
                 
             };
 
-            _context.Authors.Add(_author);
+            _context.Publishers.Add(_publisher);
             _context.SaveChanges();
         }
     }
