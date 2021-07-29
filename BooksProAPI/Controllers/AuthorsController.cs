@@ -27,5 +27,14 @@ namespace BooksProAPI.Controllers
             _authorsService.AddAuthor(authorVM);
             return Ok();
         }
+
+        [HttpGet("get-author-with-books-by-id/{id}")]
+
+        public IActionResult GetAuthorsWithBook(int id)
+        {
+            var response = _authorsService.GetAuthorWithBooks(id);
+
+            return Ok(response);
+        }
     }
 }
