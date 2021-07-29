@@ -35,5 +35,14 @@ namespace BooksProAPI.Controllers
             var _response = _publishersService.GetPublishersData(id);
             return Ok(_response);
         }
+
+        [HttpDelete("delete-publisher-id/{id}")]
+
+        public IActionResult DeletePublisherById(int id)
+        {
+            _publishersService.DeletePublisherById(id);
+
+            return Ok();
+        }
     }
 }
