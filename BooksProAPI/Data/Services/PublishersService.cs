@@ -1,8 +1,10 @@
 ﻿using BooksProAPI.Data.Models;
 using BooksProAPI.Data.ViewModels;
+using BooksProAPI.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace BooksProAPI.Data.Services
@@ -19,6 +21,7 @@ namespace BooksProAPI.Data.Services
 
         public Publisher AddPublisher(PublisherVM publisher)
         {
+            if (StringStartsWithNumber(publisher.Name)) throw new PublisherNameException("Name starts with number", publisher.Name);
             var _publisher = new Publisher()
             {
                 Name = publisher.Name,
@@ -63,5 +66,29 @@ namespace BooksProAPI.Data.Services
                 throw new Exception($"The publisher with id: {id} does not exist");
             }
         }
-    }  
+
+
+
+        private bool StringStartsWithNumber(string name)
+        {
+            if (Regex.IsMatch(name, @"^\d")) return true;
+            return false;
+        }
+
+
+        //or
+
+        //private bool StringStartsWithNumber(string name)
+        //{
+        //    return (Regex.IsMatch(name, @"^\d"));
+
+        //}
+
+        //or
+        //private bool StringStartsWithNumber(string name) => (Regex.IsMatch(name, @"^\d"));
+
+
+
+
+    }
 }
