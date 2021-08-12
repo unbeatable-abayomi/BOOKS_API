@@ -24,8 +24,34 @@ namespace BooksProAPI.Controllers
 
         public IActionResult AddPublisher([FromBody] PublisherVM publisherVM)
         {
-            _publishersService.AddPubliher(publisherVM);
-            return Ok();
+            try
+            {
+                var newPublisher = _publishersService.AddPublisher(publisherVM);
+                return Created(nameof(AddPublisher), newPublisher);
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(ex.Message);
+            }
+          
+        }
+
+        [HttpGet("get-publisher-by-id/{id}")]
+
+        public IActionResult GetPublisherById(int id)
+        {
+            var _response = _publishersService.GetPublisherById(id);
+
+            if (_response != null)
+            {
+                return Ok(_response);
+            }
+            else
+            {
+                return NotFound();
+            }
+            
         }
 
         [HttpGet("get-publisher-books-with-authors/{id}")]
@@ -40,9 +66,28 @@ namespace BooksProAPI.Controllers
 
         public IActionResult DeletePublisherById(int id)
         {
-            _publishersService.DeletePublisherById(id);
 
-            return Ok();
+            try
+            {
+                //int x1 = 1;
+                //int x2 = 0;
+                //int result = x1 / x2;
+
+                _publishersService.DeletePublisherById(id);
+
+                return Ok();
+            }
+            //catch (ArithmeticException ex)
+            //{
+
+            //    return BadRequest(ex.Message);
+            //}
+            catch (Exception ex)
+            {
+
+                return BadRequest(ex.Message);
+            }
+            //finally { string stopHere = ""; }
         }
     }
 }
