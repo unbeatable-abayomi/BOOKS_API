@@ -30,6 +30,8 @@ namespace BooksProAPI.Data.Services
                 CoverUrl = book.CoverUrl,
                 DateAdded = DateTime.Now,
                 PublisherId = book.PublisherId,
+
+
             };
             _context.Books.Add(_book);
             _context.SaveChanges();
