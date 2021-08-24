@@ -43,6 +43,13 @@ namespace BooksProAPI.Exceptions
             });
         
         }
-        
+
+
+        public static void ConfigureCustomInExceptionHandler(this IApplicationBuilder app)
+        {
+            app.UseMiddleware<CustomExceptionMiddleware>();
+        }
+
+
     }
 }

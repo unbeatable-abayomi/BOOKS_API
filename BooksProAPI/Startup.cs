@@ -63,7 +63,8 @@ namespace BooksProAPI
             app.UseAuthorization();
 
             //Expection Handling
-            app.ConfigureBuildInExceptionHandler();
+            //app.ConfigureBuildInExceptionHandler();
+            app.ConfigureCustomInExceptionHandler();
 
             app.UseEndpoints(endpoints =>
             {
