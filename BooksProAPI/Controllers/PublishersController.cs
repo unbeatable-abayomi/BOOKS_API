@@ -46,6 +46,7 @@ namespace BooksProAPI.Controllers
 
         public IActionResult GetPublisherById(int id)
         {
+            throw new Exception("This is an exception that will handled by middleware");
             var _response = _publishersService.GetPublisherById(id);
 
             if (_response != null)

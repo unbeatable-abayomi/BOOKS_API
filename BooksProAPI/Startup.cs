@@ -1,5 +1,6 @@
 using BooksProAPI.Data;
 using BooksProAPI.Data.Services;
+using BooksProAPI.Exceptions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -60,6 +61,9 @@ namespace BooksProAPI
             app.UseRouting();
 
             app.UseAuthorization();
+
+            //Expection Handling
+            app.ConfigureBuildInExceptionHandler();
 
             app.UseEndpoints(endpoints =>
             {
