@@ -1,4 +1,5 @@
-﻿using BooksProAPI.Data.Services;
+﻿using BooksProAPI.ActionResults;
+using BooksProAPI.Data.Services;
 using BooksProAPI.Data.ViewModels;
 using BooksProAPI.Exceptions;
 using Microsoft.AspNetCore.Http;
@@ -44,18 +45,31 @@ namespace BooksProAPI.Controllers
 
         [HttpGet("get-publisher-by-id/{id}")]
 
-        public IActionResult GetPublisherById(int id)
+        public CustomActionResult GetPublisherById(int id)
         {
-            throw new Exception("This is an exception that will handled by middleware");
+            //throw new Exception("This is an exception that will handled by middleware");
             var _response = _publishersService.GetPublisherById(id);
 
             if (_response != null)
             {
-                return Ok(_response);
+
+                //return Ok(_response);
+
+                var _respondObj = new CustomActionResultVM()
+                {
+                    Publisher = _response
+                };
+                return new CustomActionResult(_respondObj);
+
             }
             else
             {
-                return NotFound();
+                var _respondObj = new CustomActionResultVM()
+                {
+                    Exception = new Exception("This is coming from Publisher controller")
+                };
+                return new CustomActionResult(_respondObj);
+                // return NotFound();
             }
             
         }

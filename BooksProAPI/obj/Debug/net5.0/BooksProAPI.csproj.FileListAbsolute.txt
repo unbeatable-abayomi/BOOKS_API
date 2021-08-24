@@ -1,3 +1,10 @@
+C:\Users\Limbot Express\source\repos\BooksProAPI\BooksProAPI\obj\Debug\net5.0\BooksProAPI.csproj.AssemblyReference.cache
+C:\Users\Limbot Express\source\repos\BooksProAPI\BooksProAPI\obj\Debug\net5.0\BooksProAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Limbot Express\source\repos\BooksProAPI\BooksProAPI\obj\Debug\net5.0\BooksProAPI.AssemblyInfoInputs.cache
+C:\Users\Limbot Express\source\repos\BooksProAPI\BooksProAPI\obj\Debug\net5.0\BooksProAPI.AssemblyInfo.cs
+C:\Users\Limbot Express\source\repos\BooksProAPI\BooksProAPI\obj\Debug\net5.0\BooksProAPI.csproj.CoreCompileInputs.cache
+C:\Users\Limbot Express\source\repos\BooksProAPI\BooksProAPI\obj\Debug\net5.0\BooksProAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Limbot Express\source\repos\BooksProAPI\BooksProAPI\obj\Debug\net5.0\BooksProAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Limbot Express\source\repos\BooksProAPI\BooksProAPI\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\Limbot Express\source\repos\BooksProAPI\BooksProAPI\bin\Debug\net5.0\appsettings.json
 C:\Users\Limbot Express\source\repos\BooksProAPI\BooksProAPI\bin\Debug\net5.0\BooksProAPI.exe
@@ -43,13 +50,6 @@ C:\Users\Limbot Express\source\repos\BooksProAPI\BooksProAPI\bin\Debug\net5.0\ru
 C:\Users\Limbot Express\source\repos\BooksProAPI\BooksProAPI\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Users\Limbot Express\source\repos\BooksProAPI\BooksProAPI\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\Limbot Express\source\repos\BooksProAPI\BooksProAPI\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Limbot Express\source\repos\BooksProAPI\BooksProAPI\obj\Debug\net5.0\BooksProAPI.csproj.AssemblyReference.cache
-C:\Users\Limbot Express\source\repos\BooksProAPI\BooksProAPI\obj\Debug\net5.0\BooksProAPI.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Limbot Express\source\repos\BooksProAPI\BooksProAPI\obj\Debug\net5.0\BooksProAPI.AssemblyInfoInputs.cache
-C:\Users\Limbot Express\source\repos\BooksProAPI\BooksProAPI\obj\Debug\net5.0\BooksProAPI.AssemblyInfo.cs
-C:\Users\Limbot Express\source\repos\BooksProAPI\BooksProAPI\obj\Debug\net5.0\BooksProAPI.csproj.CoreCompileInputs.cache
-C:\Users\Limbot Express\source\repos\BooksProAPI\BooksProAPI\obj\Debug\net5.0\BooksProAPI.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Limbot Express\source\repos\BooksProAPI\BooksProAPI\obj\Debug\net5.0\BooksProAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Limbot Express\source\repos\BooksProAPI\BooksProAPI\obj\Debug\net5.0\staticwebassets\BooksProAPI.StaticWebAssets.Manifest.cache
 C:\Users\Limbot Express\source\repos\BooksProAPI\BooksProAPI\obj\Debug\net5.0\staticwebassets\BooksProAPI.StaticWebAssets.xml
 C:\Users\Limbot Express\source\repos\BooksProAPI\BooksProAPI\obj\Debug\net5.0\scopedcss\bundle\BooksProAPI.styles.css
